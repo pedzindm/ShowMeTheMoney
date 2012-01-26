@@ -15,5 +15,18 @@ namespace ShowMeTheMoney
         {
             InitializeComponent();
         }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DBAccess db = new DBAccess();
+            db.InsertData_into_stock();
+        }
+
+
     }
 }
