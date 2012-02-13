@@ -1,18 +1,10 @@
-﻿/*
-    Jarloo
-    http://jarloo.com
- 
-    This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License  
-    http://creativecommons.org/licenses/by-sa/3.0/     
-
-*/
+﻿
 using System;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Xml.Linq;
-using Jarloo.CardStock.Models;
 
-namespace Jarloo.CardStock.Helpers
+namespace ShowMeTheMoney
 {
     public class YahooStockEngine
     {
@@ -83,26 +75,26 @@ namespace Jarloo.CardStock.Helpers
             }
         }
 
-        private static decimal? GetDecimal(string input)
+        private static decimal GetDecimal(string input)
         {
-            if (input == null) return null;
+            if (input == null) return 0;
 
             input = input.Replace("%", "");
 
             decimal value;
 
             if (Decimal.TryParse(input, out value)) return value;
-            return null;
+            return 0;
         }
 
-        private static DateTime? GetDateTime(string input)
+        private static DateTime GetDateTime(string input)
         {
-            if (input == null) return null;
+            if (input == null) return DateTime.MinValue;
 
             DateTime value;
 
             if (DateTime.TryParse(input, out value)) return value;
-            return null;
+            return DateTime.MinValue;
         }
     }
 }

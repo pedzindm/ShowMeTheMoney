@@ -1,65 +1,57 @@
-﻿/*
-    Jarloo
-    http://jarloo.com
- 
-    This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License  
-    http://creativecommons.org/licenses/by-sa/3.0/     
-
-*/
-using System;
+﻿using System;
 using System.ComponentModel;
 
-namespace Jarloo.CardStock.Models
+namespace ShowMeTheMoney
 {
     public class Quote : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
         private string symbol;
-        private decimal? averageDailyVolume;
-        private decimal? bid;
-        private decimal? ask;
-        private decimal? bookValue;
-        private decimal? changePercent;
-        private decimal? change;
-        private decimal? dividendShare;
-        private DateTime? lastTradeDate;
-        private decimal? earningsShare;
-        private decimal? epsEstimateCurrentYear;
-        private decimal? epsEstimateNextYear;
-        private decimal? epsEstimateNextQuarter;
-        private decimal? dailyLow;
-        private decimal? dailyHigh;
-        private decimal? yearlyLow;
-        private decimal? yearlyHigh;
-        private decimal? marketCapitalization;
-        private decimal? ebitda;
-        private decimal? changeFromYearLow;
-        private decimal? percentChangeFromYearLow;
-        private decimal? changeFromYearHigh;
-        private decimal? percentChangeFromYearHigh;
-        private decimal? lastTradePrice;
-        private decimal? fiftyDayMovingAverage;
-        private decimal? twoHunderedDayMovingAverage;
-        private decimal? changeFromTwoHundredDayMovingAverage;
-        private decimal? percentChangeFromFiftyDayMovingAverage;
+        private decimal averageDailyVolume;
+        private decimal bid;
+        private decimal ask;
+        private decimal bookValue;
+        private decimal changePercent;
+        private decimal change;
+        private decimal dividendShare;
+        private DateTime lastTradeDate;
+        private decimal earningsShare;
+        private decimal epsEstimateCurrentYear;
+        private decimal epsEstimateNextYear;
+        private decimal epsEstimateNextQuarter;
+        private decimal dailyLow;
+        private decimal dailyHigh;
+        private decimal yearlyLow;
+        private decimal yearlyHigh;
+        private decimal marketCapitalization;
+        private decimal ebitda;
+        private decimal changeFromYearLow;
+        private decimal percentChangeFromYearLow;
+        private decimal changeFromYearHigh;
+        private decimal percentChangeFromYearHigh;
+        private decimal lastTradePrice;
+        private decimal fiftyDayMovingAverage;
+        private decimal twoHunderedDayMovingAverage;
+        private decimal changeFromTwoHundredDayMovingAverage;
+        private decimal percentChangeFromFiftyDayMovingAverage;
         private string name;
-        private decimal? open;
-        private decimal? previousClose;
-        private decimal? changeInPercent;
-        private decimal? priceSales;
-        private decimal? priceBook;
-        private DateTime? exDividendDate;
-        private decimal? pegRatio;
-        private decimal? priceEpsEstimateCurrentYear;
-        private decimal? priceEpsEstimateNextYear;
-        private decimal? shortRatio;
-        private decimal? oneYearPriceTarget;
-        private decimal? dividendYield;
-        private DateTime? dividendPayDate;
-        private decimal? percentChangeFromTwoHundredDayMovingAverage;
-        private decimal? peRatio;
-        private decimal? volume;
+        private decimal open;
+        private decimal previousClose;
+        private decimal changeInPercent;
+        private decimal priceSales;
+        private decimal priceBook;
+        private DateTime exDividendDate;
+        private decimal pegRatio;
+        private decimal priceEpsEstimateCurrentYear;
+        private decimal priceEpsEstimateNextYear;
+        private decimal shortRatio;
+        private decimal oneYearPriceTarget;
+        private decimal dividendYield;
+        private DateTime dividendPayDate;
+        private decimal percentChangeFromTwoHundredDayMovingAverage;
+        private decimal peRatio;
+        private decimal volume;
         private string stockExchange;
         private DateTime lastUpdate;
         
@@ -74,7 +66,6 @@ namespace Jarloo.CardStock.Models
             }
         }
 
-
         public string StockExchange
         {
             get { return stockExchange; }
@@ -85,8 +76,7 @@ namespace Jarloo.CardStock.Models
             }
         }
 
-
-        public decimal? Volume
+        public decimal Volume
         {
             get { return volume; }
             set
@@ -96,7 +86,7 @@ namespace Jarloo.CardStock.Models
             }
         }
 
-        public decimal? PeRatio
+        public decimal PeRatio
         {
             get { return peRatio; }
             set
@@ -106,7 +96,7 @@ namespace Jarloo.CardStock.Models
             }
         }
 
-        public decimal? PercentChangeFromTwoHundredDayMovingAverage
+        public decimal PercentChangeFromTwoHundredDayMovingAverage
         {
             get { return percentChangeFromTwoHundredDayMovingAverage; }
             set
@@ -121,7 +111,7 @@ namespace Jarloo.CardStock.Models
             symbol = ticker;
         }
 
-        public DateTime? DividendPayDate
+        public DateTime DividendPayDate
         {
             get { return dividendPayDate; }
             set
@@ -131,7 +121,7 @@ namespace Jarloo.CardStock.Models
             }
         }
 
-        public decimal? DividendYield
+        public decimal DividendYield
         {
             get { return dividendYield; }
             set
@@ -141,8 +131,7 @@ namespace Jarloo.CardStock.Models
             }
         }
 
-
-        public decimal? OneYearPriceTarget
+        public decimal OneYearPriceTarget
         {
             get { return oneYearPriceTarget; }
             set
@@ -152,7 +141,7 @@ namespace Jarloo.CardStock.Models
             }
         }
 
-        public decimal? ShortRatio
+        public decimal ShortRatio
         {
             get { return shortRatio; }
             set
@@ -162,8 +151,7 @@ namespace Jarloo.CardStock.Models
             }
         }
 
-
-        public decimal? PriceEpsEstimateNextYear
+        public decimal PriceEpsEstimateNextYear
         {
             get { return priceEpsEstimateNextYear; }
             set
@@ -173,8 +161,7 @@ namespace Jarloo.CardStock.Models
             }
         }
 
-
-        public decimal? PriceEpsEstimateCurrentYear
+        public decimal PriceEpsEstimateCurrentYear
         {
             get { return priceEpsEstimateCurrentYear; }
             set
@@ -184,8 +171,7 @@ namespace Jarloo.CardStock.Models
             }
         }
 
-
-        public decimal? PegRatio
+        public decimal PegRatio
         {
             get { return pegRatio; }
             set
@@ -195,8 +181,7 @@ namespace Jarloo.CardStock.Models
             }
         }
 
-
-        public DateTime? ExDividendDate
+        public DateTime ExDividendDate
         {
             get { return exDividendDate; }
             set
@@ -206,8 +191,7 @@ namespace Jarloo.CardStock.Models
             }
         }
 
-
-        public decimal? PriceBook
+        public decimal PriceBook
         {
             get { return priceBook; }
             set
@@ -218,7 +202,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? PriceSales
+        public decimal PriceSales
         {
             get { return priceSales; }
             set
@@ -229,7 +213,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? ChangeInPercent
+        public decimal ChangeInPercent
         {
             get { return changeInPercent; }
             set
@@ -240,7 +224,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? PreviousClose
+        public decimal PreviousClose
         {
             get { return previousClose; }
             set
@@ -251,7 +235,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? Open
+        public decimal Open
         {
             get { return open; }
             set
@@ -273,7 +257,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? PercentChangeFromFiftyDayMovingAverage
+        public decimal PercentChangeFromFiftyDayMovingAverage
         {
             get { return percentChangeFromFiftyDayMovingAverage; }
             set
@@ -284,7 +268,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? ChangeFromTwoHundredDayMovingAverage
+        public decimal ChangeFromTwoHundredDayMovingAverage
         {
             get { return changeFromTwoHundredDayMovingAverage; }
             set
@@ -295,7 +279,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? TwoHunderedDayMovingAverage
+        public decimal TwoHunderedDayMovingAverage
         {
             get { return twoHunderedDayMovingAverage; }
             set
@@ -306,7 +290,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? FiftyDayMovingAverage
+        public decimal FiftyDayMovingAverage
         {
             get { return fiftyDayMovingAverage; }
             set
@@ -317,7 +301,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? LastTradePrice
+        public decimal LastTradePrice
         {
             get { return lastTradePrice; }
             set
@@ -328,7 +312,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? PercentChangeFromYearHigh
+        public decimal PercentChangeFromYearHigh
         {
             get { return percentChangeFromYearHigh; }
             set
@@ -339,7 +323,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? ChangeFromYearHigh
+        public decimal ChangeFromYearHigh
         {
             get { return changeFromYearHigh; }
             set
@@ -350,7 +334,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? PercentChangeFromYearLow
+        public decimal PercentChangeFromYearLow
         {
             get { return percentChangeFromYearLow; }
             set
@@ -361,7 +345,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? ChangeFromYearLow
+        public decimal ChangeFromYearLow
         {
             get { return changeFromYearLow; }
             set
@@ -372,7 +356,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? Ebitda
+        public decimal Ebitda
         {
             get { return ebitda; }
             set
@@ -383,7 +367,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? MarketCapitalization
+        public decimal MarketCapitalization
         {
             get { return marketCapitalization; }
             set
@@ -394,7 +378,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? YearlyHigh
+        public decimal YearlyHigh
         {
             get { return yearlyHigh; }
             set
@@ -405,7 +389,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? YearlyLow
+        public decimal YearlyLow
         {
             get { return yearlyLow; }
             set
@@ -416,7 +400,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? DailyHigh
+        public decimal DailyHigh
         {
             get { return dailyHigh; }
             set
@@ -427,7 +411,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? DailyLow
+        public decimal DailyLow
         {
             get { return dailyLow; }
             set
@@ -438,7 +422,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? EpsEstimateNextQuarter
+        public decimal EpsEstimateNextQuarter
         {
             get { return epsEstimateNextQuarter; }
             set
@@ -449,7 +433,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? EpsEstimateNextYear
+        public decimal EpsEstimateNextYear
         {
             get { return epsEstimateNextYear; }
             set
@@ -460,7 +444,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? EpsEstimateCurrentYear
+        public decimal EpsEstimateCurrentYear
         {
             get { return epsEstimateCurrentYear; }
             set
@@ -471,7 +455,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? EarningsShare
+        public decimal EarningsShare
         {
             get { return earningsShare; }
             set
@@ -482,7 +466,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public DateTime? LastTradeDate
+        public DateTime LastTradeDate
         {
             get { return lastTradeDate; }
             set
@@ -493,7 +477,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? DividendShare
+        public decimal DividendShare
         {
             get { return dividendShare; }
             set
@@ -504,7 +488,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? Change
+        public decimal Change
         {
             get { return change; }
             set
@@ -515,7 +499,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? ChangePercent
+        public decimal ChangePercent
         {
             get { return changePercent; }
             set
@@ -526,7 +510,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? BookValue
+        public decimal BookValue
         {
             get { return bookValue; }
             set
@@ -537,7 +521,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? Ask
+        public decimal Ask
         {
             get { return ask; }
             set
@@ -548,7 +532,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? Bid
+        public decimal Bid
         {
             get { return bid; }
             set
@@ -559,7 +543,7 @@ namespace Jarloo.CardStock.Models
         }
 
 
-        public decimal? AverageDailyVolume
+        public decimal AverageDailyVolume
         {
             get { return averageDailyVolume; }
             set

@@ -17,3 +17,6 @@ C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\Show
 C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\bin\Debug\fr\Npgsql.resources.dll
 C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\bin\Debug\ja\Npgsql.resources.dll
 C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\bin\Debug\zh-CN\Npgsql.resources.dll
+C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\obj\x86\Debug\ShowMeTheMoney.loginbox.resources
+C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\obj\x86\Debug\ShowMeTheMoney.accounts.resources
+C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\obj\x86\Debug\ShowMeTheMoney.investment.resources
