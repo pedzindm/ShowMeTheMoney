@@ -152,26 +152,33 @@ namespace ShowMeTheMoney
        private void tickerlookupbutton_Click(object sender, EventArgs e)
        {
            Quotes = new ObservableCollection<Quote>();
+           if (lookuptextbox.Text != "")
+           {
+               //Some example tickers
+               Quotes.Add(new Quote(lookuptextbox.Text.ToUpper()));
+               //get the data
+               YahooStockEngine.Fetch(Quotes);
 
-           //Some example tickers
-           Quotes.Add(new Quote(lookuptextbox.Text.ToUpper()));
-           //get the data
-           YahooStockEngine.Fetch(Quotes);
+               lookuphistory.Rows.Add(lookuptextbox.Text, Quotes[0].LastUpdate, Quotes[0].DividendShare, Quotes[0].Name, Quotes[0].ChangeInPercent, Quotes[0].LastTradePrice, Quotes[0].DailyHigh, Quotes[0].DailyLow);
+               labeldailyhigh.Text = Quotes[0].DailyHigh.ToString();
+               labeldailylow.Text = Quotes[0].DailyLow.ToString();
+               labelyearlyhigh.Text = Quotes[0].YearlyHigh.ToString();
+               labeldividendrate.Text = Quotes[0].DividendShare.ToString();
+               labelPEratio.Text = Quotes[0].PeRatio.ToString();
+               labellastupdate.Text = Quotes[0].LastUpdate.ToString();
+               labelcurrentprice.Text = Quotes[0].LastTradePrice.ToString() + " ( " + Quotes[0].ChangeInPercent.ToString() + " )";
+               labeltickersymbol.Text = Quotes[0].Name.ToString() + " ( " + Quotes[0].StockExchange.ToString() + " : " + lookuptextbox.Text.ToUpper() + " )";
 
-           lookuphistory.Rows.Add(lookuptextbox.Text, Quotes[0].LastUpdate, Quotes[0].DividendShare, Quotes[0].Name, Quotes[0].ChangeInPercent, Quotes[0].LastTradePrice, Quotes[0].DailyHigh, Quotes[0].DailyLow);
-           labeldailyhigh.Text = Quotes[0].DailyHigh.ToString();
-           labeldailylow.Text = Quotes[0].DailyLow.ToString();
-           labelyearlyhigh.Text = Quotes[0].YearlyHigh.ToString();
-           labeldividendrate.Text = Quotes[0].DividendShare.ToString();
-           labelPEratio.Text = Quotes[0].PeRatio.ToString();
-           labellastupdate.Text = Quotes[0].LastUpdate.ToString();
-           labelcurrentprice.Text = Quotes[0].LastTradePrice.ToString() + " ( " + Quotes[0].ChangeInPercent.ToString() + " )";
-           labeltickersymbol.Text = Quotes[0].Name.ToString() + " ( " + Quotes[0].StockExchange.ToString() + " : " + lookuptextbox.Text.ToUpper() + " )";
+               lookupview.DataSource = lookuphistory;
 
-           lookupview.DataSource = lookuphistory;
+               panel3.Refresh();
+           }
+           else
+           {
+               label30.Visible = true;
 
-           panel3.Refresh();
-       
+
+           }
        
        }
 

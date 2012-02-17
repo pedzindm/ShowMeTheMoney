@@ -28,18 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.HomeMenuStrip = new System.Windows.Forms.MenuStrip();
             this.DashboardMitem = new System.Windows.Forms.ToolStripMenuItem();
             this.StockMitem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.TopPerformers = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bondsview = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
@@ -53,11 +58,6 @@
             this.cdview = new System.Windows.Forms.DataGridView();
             this.stocksview = new System.Windows.Forms.DataGridView();
             this.Stock_Performance = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.TopPerformers = new System.Windows.Forms.DataGridView();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -110,11 +110,6 @@
             this.investhistory = new System.Windows.Forms.ToolStripMenuItem();
             this.stockhistory = new System.Windows.Forms.ToolStripMenuItem();
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.historyinvestment = new System.Windows.Forms.Panel();
-            this.historybondsview = new System.Windows.Forms.DataGridView();
-            this.label7 = new System.Windows.Forms.Label();
-            this.historyCDview = new System.Windows.Forms.DataGridView();
-            this.label12 = new System.Windows.Forms.Label();
             this.searchpanel = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -122,6 +117,11 @@
             this.historystock = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.stockhistoryview = new System.Windows.Forms.DataGridView();
+            this.historyinvestment = new System.Windows.Forms.Panel();
+            this.historybondsview = new System.Windows.Forms.DataGridView();
+            this.label7 = new System.Windows.Forms.Label();
+            this.historyCDview = new System.Windows.Forms.DataGridView();
+            this.label12 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.fnametb = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
@@ -139,17 +139,18 @@
             this.menuStrip4 = new System.Windows.Forms.MenuStrip();
             this.edituser = new System.Windows.Forms.ToolStripMenuItem();
             this.adduser = new System.Windows.Forms.ToolStripMenuItem();
+            this.label30 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.HomeMenuStrip.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TopPerformers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bondsview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cdview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stocksview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Stock_Performance)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TopPerformers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -162,13 +163,13 @@
             this.menuStrip5.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.menuStrip3.SuspendLayout();
-            this.historyinvestment.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.historybondsview)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.historyCDview)).BeginInit();
             this.searchpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.historystock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stockhistoryview)).BeginInit();
+            this.historyinvestment.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.historybondsview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.historyCDview)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.menuStrip4.SuspendLayout();
             this.SuspendLayout();
@@ -237,6 +238,65 @@
             this.updateToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.updateToolStripMenuItem.Text = "Update";
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.AutoSize = true;
+            this.panel2.Controls.Add(this.TopPerformers);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.chart1);
+            this.panel2.Location = new System.Drawing.Point(3, 27);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(767, 525);
+            this.panel2.TabIndex = 16;
+            // 
+            // TopPerformers
+            // 
+            this.TopPerformers.AllowUserToAddRows = false;
+            this.TopPerformers.AllowUserToDeleteRows = false;
+            this.TopPerformers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TopPerformers.Location = new System.Drawing.Point(0, 21);
+            this.TopPerformers.Name = "TopPerformers";
+            this.TopPerformers.ReadOnly = true;
+            this.TopPerformers.Size = new System.Drawing.Size(764, 214);
+            this.TopPerformers.TabIndex = 9;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(2, 4);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(94, 13);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Current Performers";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(4, 239);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(98, 13);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "Stock Performance";
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Enabled = false;
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(2, 255);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(762, 267);
+            this.chart1.TabIndex = 0;
+            this.chart1.Text = "chart1";
             // 
             // panel1
             // 
@@ -366,80 +426,21 @@
             // 
             // Stock_Performance
             // 
-            chartArea5.Name = "ChartArea1";
-            this.Stock_Performance.ChartAreas.Add(chartArea5);
-            legend5.Enabled = false;
-            legend5.Name = "Legend1";
-            this.Stock_Performance.Legends.Add(legend5);
+            chartArea2.Name = "ChartArea1";
+            this.Stock_Performance.ChartAreas.Add(chartArea2);
+            legend2.Enabled = false;
+            legend2.Name = "Legend1";
+            this.Stock_Performance.Legends.Add(legend2);
             this.Stock_Performance.Location = new System.Drawing.Point(0, 17);
             this.Stock_Performance.Name = "Stock_Performance";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.Stock_Performance.Series.Add(series5);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.Stock_Performance.Series.Add(series2);
             this.Stock_Performance.Size = new System.Drawing.Size(353, 218);
             this.Stock_Performance.TabIndex = 0;
             this.Stock_Performance.Text = "chart1";
-            // 
-            // panel2
-            // 
-            this.panel2.AutoSize = true;
-            this.panel2.Controls.Add(this.TopPerformers);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.chart1);
-            this.panel2.Location = new System.Drawing.Point(3, 27);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(767, 525);
-            this.panel2.TabIndex = 16;
-            // 
-            // TopPerformers
-            // 
-            this.TopPerformers.AllowUserToAddRows = false;
-            this.TopPerformers.AllowUserToDeleteRows = false;
-            this.TopPerformers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TopPerformers.Location = new System.Drawing.Point(0, 21);
-            this.TopPerformers.Name = "TopPerformers";
-            this.TopPerformers.ReadOnly = true;
-            this.TopPerformers.Size = new System.Drawing.Size(764, 214);
-            this.TopPerformers.TabIndex = 9;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(2, 4);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(94, 13);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Current Performers";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(4, 239);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(98, 13);
-            this.label11.TabIndex = 7;
-            this.label11.Text = "Stock Performance";
-            // 
-            // chart1
-            // 
-            chartArea6.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea6);
-            legend6.Enabled = false;
-            legend6.Name = "Legend1";
-            this.chart1.Legends.Add(legend6);
-            this.chart1.Location = new System.Drawing.Point(2, 255);
-            this.chart1.Name = "chart1";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chart1.Series.Add(series6);
-            this.chart1.Size = new System.Drawing.Size(762, 267);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chart1";
             // 
             // tabPage2
             // 
@@ -456,6 +457,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.label30);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.tickerlookupbutton);
             this.panel3.Controls.Add(this.label9);
@@ -840,7 +842,7 @@
             // addcd
             // 
             this.addcd.Name = "addcd";
-            this.addcd.Size = new System.Drawing.Size(152, 22);
+            this.addcd.Size = new System.Drawing.Size(96, 22);
             this.addcd.Text = "Add";
             this.addcd.Click += new System.EventHandler(this.addcd_Click);
             // 
@@ -855,7 +857,7 @@
             // addbond
             // 
             this.addbond.Name = "addbond";
-            this.addbond.Size = new System.Drawing.Size(152, 22);
+            this.addbond.Size = new System.Drawing.Size(96, 22);
             this.addbond.Text = "Add";
             this.addbond.Click += new System.EventHandler(this.addbond_Click);
             // 
@@ -870,7 +872,7 @@
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.addToolStripMenuItem.Text = "Add";
             this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
@@ -911,68 +913,23 @@
             // investhistory
             // 
             this.investhistory.Name = "investhistory";
-            this.investhistory.Size = new System.Drawing.Size(152, 22);
+            this.investhistory.Size = new System.Drawing.Size(133, 22);
             this.investhistory.Text = "Investment";
             this.investhistory.Click += new System.EventHandler(this.investhistory_Click);
             // 
             // stockhistory
             // 
             this.stockhistory.Name = "stockhistory";
-            this.stockhistory.Size = new System.Drawing.Size(152, 22);
+            this.stockhistory.Size = new System.Drawing.Size(133, 22);
             this.stockhistory.Text = "Stocks";
             this.stockhistory.Click += new System.EventHandler(this.stockhistory_Click);
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.searchToolStripMenuItem.Text = "Search";
             this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
-            // 
-            // historyinvestment
-            // 
-            this.historyinvestment.Controls.Add(this.historybondsview);
-            this.historyinvestment.Controls.Add(this.label7);
-            this.historyinvestment.Controls.Add(this.historyCDview);
-            this.historyinvestment.Controls.Add(this.label12);
-            this.historyinvestment.Location = new System.Drawing.Point(3, 30);
-            this.historyinvestment.Name = "historyinvestment";
-            this.historyinvestment.Size = new System.Drawing.Size(770, 522);
-            this.historyinvestment.TabIndex = 2;
-            // 
-            // historybondsview
-            // 
-            this.historybondsview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.historybondsview.Location = new System.Drawing.Point(5, 196);
-            this.historybondsview.Name = "historybondsview";
-            this.historybondsview.Size = new System.Drawing.Size(762, 155);
-            this.historybondsview.TabIndex = 3;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(4, 180);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 13);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "History Bonds";
-            // 
-            // historyCDview
-            // 
-            this.historyCDview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.historyCDview.Location = new System.Drawing.Point(5, 22);
-            this.historyCDview.Name = "historyCDview";
-            this.historyCDview.Size = new System.Drawing.Size(762, 155);
-            this.historyCDview.TabIndex = 1;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(2, 6);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(57, 13);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "History CD";
             // 
             // searchpanel
             // 
@@ -1034,6 +991,51 @@
             this.stockhistoryview.Name = "stockhistoryview";
             this.stockhistoryview.Size = new System.Drawing.Size(765, 272);
             this.stockhistoryview.TabIndex = 0;
+            // 
+            // historyinvestment
+            // 
+            this.historyinvestment.Controls.Add(this.historybondsview);
+            this.historyinvestment.Controls.Add(this.label7);
+            this.historyinvestment.Controls.Add(this.historyCDview);
+            this.historyinvestment.Controls.Add(this.label12);
+            this.historyinvestment.Location = new System.Drawing.Point(3, 30);
+            this.historyinvestment.Name = "historyinvestment";
+            this.historyinvestment.Size = new System.Drawing.Size(770, 522);
+            this.historyinvestment.TabIndex = 2;
+            // 
+            // historybondsview
+            // 
+            this.historybondsview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.historybondsview.Location = new System.Drawing.Point(5, 196);
+            this.historybondsview.Name = "historybondsview";
+            this.historybondsview.Size = new System.Drawing.Size(762, 155);
+            this.historybondsview.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(4, 180);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 13);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "History Bonds";
+            // 
+            // historyCDview
+            // 
+            this.historyCDview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.historyCDview.Location = new System.Drawing.Point(5, 22);
+            this.historyCDview.Name = "historyCDview";
+            this.historyCDview.Size = new System.Drawing.Size(762, 155);
+            this.historyCDview.TabIndex = 1;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(2, 6);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(57, 13);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "History CD";
             // 
             // tabPage4
             // 
@@ -1186,9 +1188,20 @@
             // adduser
             // 
             this.adduser.Name = "adduser";
-            this.adduser.Size = new System.Drawing.Size(152, 22);
+            this.adduser.Size = new System.Drawing.Size(122, 22);
             this.adduser.Text = "Add User";
             this.adduser.Click += new System.EventHandler(this.adduser_Click);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.ForeColor = System.Drawing.Color.DarkRed;
+            this.label30.Location = new System.Drawing.Point(191, 35);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(91, 13);
+            this.label30.TabIndex = 4;
+            this.label30.Text = "INVALID TICKER";
+            this.label30.Visible = false;
             // 
             // Form1
             // 
@@ -1205,16 +1218,16 @@
             this.tabPage1.PerformLayout();
             this.HomeMenuStrip.ResumeLayout(false);
             this.HomeMenuStrip.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TopPerformers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bondsview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cdview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stocksview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Stock_Performance)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TopPerformers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -1235,16 +1248,16 @@
             this.tabPage3.PerformLayout();
             this.menuStrip3.ResumeLayout(false);
             this.menuStrip3.PerformLayout();
-            this.historyinvestment.ResumeLayout(false);
-            this.historyinvestment.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.historybondsview)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.historyCDview)).EndInit();
             this.searchpanel.ResumeLayout(false);
             this.searchpanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.historystock.ResumeLayout(false);
             this.historystock.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stockhistoryview)).EndInit();
+            this.historyinvestment.ResumeLayout(false);
+            this.historyinvestment.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.historybondsview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.historyCDview)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.menuStrip4.ResumeLayout(false);
@@ -1360,6 +1373,7 @@
         private System.Windows.Forms.ToolStripMenuItem cashToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label30;
     }
 }
 
