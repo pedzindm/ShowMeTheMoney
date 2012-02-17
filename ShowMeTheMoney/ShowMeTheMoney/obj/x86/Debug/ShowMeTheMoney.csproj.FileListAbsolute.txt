@@ -19,4 +19,11 @@ C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\Show
 C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\bin\Debug\zh-CN\Npgsql.resources.dll
 C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\obj\x86\Debug\ShowMeTheMoney.loginbox.resources
 C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\obj\x86\Debug\ShowMeTheMoney.accounts.resources
-C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\obj\x86\Debug\ShowMeTheMoney.investment.resources
+C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\obj\x86\Debug\ShowMeTheMoney.forgotpassword.resources
+C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\obj\x86\Debug\ShowMeTheMoney.buystock.resources
+C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\obj\x86\Debug\ShowMeTheMoney.Bonds.resources
+C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\obj\x86\Debug\ShowMeTheMoney.CD.resources
+C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\obj\x86\Debug\ShowMeTheMoney.sellstock.resources
+C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\obj\x86\Debug\ShowMeTheMoney.Add_User.resources
+C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\obj\x86\Debug\ShowMeTheMoney.newaccounts.resources
+C:\Users\pedzindm\Documents\Junior_Year\Winter Term\CSSE 333\ShowMeTheMoney\ShowMeTheMoney\ShowMeTheMoney\obj\x86\Debug\ShowMeTheMoney.Cash.resources

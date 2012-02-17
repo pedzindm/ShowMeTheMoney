@@ -62,18 +62,42 @@
     <Compile Include="accounts.Designer.cs">
       <DependentUpon>accounts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add User.Designer.cs">
+      <DependentUpon>Add User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bonds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bonds.Designer.cs">
+      <DependentUpon>Bonds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cash.Designer.cs">
+      <DependentUpon>Cash.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBAccess.cs" />
+    <Compile Include="forgotpassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotpassword.Designer.cs">
+      <DependentUpon>forgotpassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="investment.cs">
+    <Compile Include="CD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="investment.Designer.cs">
-      <DependentUpon>investment.cs</DependentUpon>
+    <Compile Include="CD.Designer.cs">
+      <DependentUpon>CD.cs</DependentUpon>
     </Compile>
     <Compile Include="loginbox.cs">
       <SubType>Form</SubType>
@@ -81,27 +105,54 @@
     <Compile Include="loginbox.Designer.cs">
       <DependentUpon>loginbox.cs</DependentUpon>
     </Compile>
+    <Compile Include="newaccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newaccounts.Designer.cs">
+      <DependentUpon>newaccounts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quote.cs" />
-    <Compile Include="stock.cs">
+    <Compile Include="buystock.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="stock.Designer.cs">
-      <DependentUpon>stock.cs</DependentUpon>
+    <Compile Include="buystock.Designer.cs">
+      <DependentUpon>buystock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sellstock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sellstock.Designer.cs">
+      <DependentUpon>sellstock.cs</DependentUpon>
     </Compile>
     <Compile Include="YahooStockEngine.cs" />
     <EmbeddedResource Include="accounts.resx">
       <DependentUpon>accounts.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Add User.resx">
+      <DependentUpon>Add User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bonds.resx">
+      <DependentUpon>Bonds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cash.resx">
+      <DependentUpon>Cash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotpassword.resx">
+      <DependentUpon>forgotpassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="investment.resx">
-      <DependentUpon>investment.cs</DependentUpon>
+    <EmbeddedResource Include="CD.resx">
+      <DependentUpon>CD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginbox.resx">
       <DependentUpon>loginbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newaccounts.resx">
+      <DependentUpon>newaccounts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -112,6 +163,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="buystock.resx">
+      <DependentUpon>buystock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sellstock.resx">
+      <DependentUpon>sellstock.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

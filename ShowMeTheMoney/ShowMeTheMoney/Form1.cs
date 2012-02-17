@@ -17,6 +17,7 @@ namespace ShowMeTheMoney
         private DBAccess db;
         public ObservableCollection<Quote> Quotes { get; set; }
         DataTable lookuphistory = new DataTable();
+        DataTable curstocks = new DataTable();
         
         public Form1(int user_id1, int account_id1)
         {
@@ -41,7 +42,11 @@ namespace ShowMeTheMoney
 #region Load
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            this.reLoad();
+
+        }
+        private void reLoad()
+        {
             panel1.Dock = DockStyle.Fill;
             panel1.Anchor = AnchorStyles.Left;
             panel2.Dock = DockStyle.Fill;
@@ -51,9 +56,59 @@ namespace ShowMeTheMoney
             panel1.Show();
             panel2.Hide();
             TopPerformers.DataSource = db.getTopPerformers();
-            stocksview.DataSource = db.getallStocks(account_id);
+            DataTable dt10 = new DataTable();
+            DataTable curstocks = new DataTable();
+            curstocks.Columns.Add("Stock_Name");
+            curstocks.Columns.Add("stock_quantity");
+            dt10 = db.select_allstockhistory(account_id);
+            foreach (DataRow dr in dt10.Rows)
+            {
+                if (dr["sh_type"].ToString() == "BUY")
+                {
+                    bool found = false;
+
+                    foreach (DataRow dr2 in curstocks.Rows)
+                    {
+
+                        if (dr2[0].ToString() == dr["s_name"].ToString())
+                        {
+                            dr2["stock_quantity"] = decimal.Parse(dr2["stock_quantity"].ToString()) + decimal.Parse(dr["quantity"].ToString());
+
+                            found = true;
+                            break;
+                        }
+                        dr2.AcceptChanges();
+                    }
+                        if(!found){
+                            curstocks.Rows.Add(dr["s_name"], dr["quantity"]);
+                        }
+
+                }
+              if (dr["sh_type"].ToString() == "SELL")
+                {
+                    
+
+                    foreach (DataRow dr2 in curstocks.Rows)
+                    {
+
+                        if (dr2[0].ToString() == dr["s_name"].ToString() )
+                        {
+                           
+                            dr2["stock_quantity"] = (decimal.Parse(dr2["stock_quantity"].ToString()) - decimal.Parse(dr["quantity"].ToString()));
+
+                           
+                            break;               
+                        }
+                        dr2.AcceptChanges();
+                    }
+                   
+                }
+                
+            }
+            stocksview.DataSource = curstocks;
             cdview.DataSource = db.select_allcd(account_id);
             bondsview.DataSource = db.select_allbonds(account_id);
+            Cashview.DataSource = db.select_allcash(account_id);
             currentcdview.DataSource = db.select_allcd(account_id);
             currentbondview.DataSource = db.select_allbonds(account_id);
             stockhistoryview.DataSource = db.select_allstockhistory(account_id);
@@ -61,6 +116,15 @@ namespace ShowMeTheMoney
             historyCDview.DataSource = db.select_allcdhistory(account_id);
             cash.Text = db.select_cash(account_id);
             netvalue.Text = db.getnetvalue(account_id);
+            DataTable dt4 = new DataTable();
+            dt4 = db.select_user(user_id);
+            usernametb.Text = dt4.Rows[0][0].ToString();
+            passwordtb.Text = dt4.Rows[0][1].ToString();
+            phonetb.Text = dt4.Rows[0][2].ToString();
+            emailtb.Text = dt4.Rows[0][3].ToString();
+            lnametb.Text = dt4.Rows[0][4].ToString();
+            fnametb.Text = dt4.Rows[0][5].ToString();
+
         }
 #endregion
 
@@ -81,7 +145,7 @@ namespace ShowMeTheMoney
 
        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
        {
-           
+           this.reLoad();
        }
 #endregion
 
@@ -113,13 +177,14 @@ namespace ShowMeTheMoney
 
        private void addcd_Click(object sender, EventArgs e)
        {
-           investment im = new investment(account_id);
+           CD im = new CD(account_id);
            im.Show();
        }
 
        private void addbond_Click(object sender, EventArgs e)
        {
-
+           Bonds im = new Bonds(account_id);
+           im.Show();
        }
 
        private void changeAccount_Click(object sender, EventArgs e)
@@ -141,17 +206,24 @@ namespace ShowMeTheMoney
 
        private void sellstock_Click(object sender, EventArgs e)
        {
+           sellstock fm = new sellstock(account_id);
 
+           fm.Show();
        }
 
        private void buystock_Click(object sender, EventArgs e)
        {
+           buystock fm = new buystock(account_id);
+
+           fm.Show();
+
 
        }
 
        private void investhistory_Click(object sender, EventArgs e)
        {
            historystock.Hide();
+           searchpanel.Hide();
            historyinvestment.Show();
        }
 
@@ -159,7 +231,63 @@ namespace ShowMeTheMoney
        {
            historystock.Show();
            historyinvestment.Hide();
+           searchpanel.Hide();
+         
        }
+
+       private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+       {
+           searchpanel.Show();
+           historyinvestment.Hide();
+           historystock.Hide();
+       }
+
+       private void adduser_Click(object sender, EventArgs e)
+       {
+           Add_User ad = new Add_User();
+           ad.Show();
+       }
+
+
+
+       private void edituserbutton_Click(object sender, EventArgs e)
+       {
+
+           db.update_user(user_id, usernametb.Text, passwordtb.Text, phonetb.Text, emailtb.Text, lnametb.Text, fnametb.Text);
+           tabPage4.Refresh();
+
+       }
+
+       private void addToolStripMenuItem_Click(object sender, EventArgs e)
+       {
+           Cash ch = new Cash(account_id);
+           ch.Show();
+           this.reLoad();
+
+       }
+
+       private void searchpanel_Paint(object sender, PaintEventArgs e)
+       {
+           DataTable dt20 = db.select_allstockhistory(account_id);
+           
+           foreach (DataRow dr2 in dt20.Rows)
+           {
+               if(textBox1.Text.ToString()==dr2["tickers"].ToString()){
+
+                   dataGridView1.Rows.Add(dr2);
+
+               }
+
+
+           }
+       }
+
+ 
+
+
+
+  
+
 
 
 

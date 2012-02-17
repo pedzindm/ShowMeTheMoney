@@ -27,17 +27,43 @@ namespace ShowMeTheMoney
                comboBox1.Items.Add(dr[1].ToString() + ":" + dr[0].ToString());
 
            }
+           user_id = db.select_userid(username, password);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-                Form1 fm = new Form1(user_id, int.Parse(comboBox1.SelectedItem.ToString().Split(':')[1]));
+            user_id = db.select_userid(username, password);
+            try
+            {
+                Form1 fm = new Form1(user_id, int.Parse(comboBox1.SelectedItem.ToString().Split(':')[1].Trim()));
 
                 fm.Show();
                 this.Hide();
                 fm.AddOwnedForm(this);
-           
+            }
+            catch
+            {
+
+
+            }
        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            newaccounts an = new newaccounts(user_id);
+            an.Show();
+           
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DataTable dt = db.select_allaccountid(username, password);
+            comboBox1.Items.Clear();
+            foreach (DataRow dr in dt.Rows)
+            {
+                comboBox1.Items.Add(dr[1].ToString() + ":" + dr[0].ToString());
+
+            }
+        }
     }
 }

@@ -23,10 +23,10 @@ namespace ShowMeTheMoney
             if (db.verify_user(username.Text, password.Text))
             {
                 accounts fm = new accounts(username.Text, password.Text);
-               
-                    fm.Show();
-                    this.Hide();
-               fm.AddOwnedForm(this); 
+
+                fm.Show();
+                this.Hide();
+                fm.AddOwnedForm(this);
             }
             else
             {
@@ -38,6 +38,26 @@ namespace ShowMeTheMoney
 
             
         }
+
+        private void forgotpwd_Click(object sender, EventArgs e)
+        {
+            forgotpassword fm = new forgotpassword();
+
+            fm.Show();
+            this.Hide();
+            fm.AddOwnedForm(this); 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Add_User fm = new Add_User();
+
+            fm.Show();
+
+            
+        }
+
+
 
 
     }

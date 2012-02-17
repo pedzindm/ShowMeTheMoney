@@ -28,14 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.HomeMenuStrip = new System.Windows.Forms.MenuStrip();
+            this.DashboardMitem = new System.Windows.Forms.ToolStripMenuItem();
+            this.StockMitem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bondsview = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,10 +53,6 @@
             this.cdview = new System.Windows.Forms.DataGridView();
             this.stocksview = new System.Windows.Forms.DataGridView();
             this.Stock_Performance = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.HomeMenuStrip = new System.Windows.Forms.MenuStrip();
-            this.DashboardMitem = new System.Windows.Forms.ToolStripMenuItem();
-            this.StockMitem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.TopPerformers = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
@@ -91,6 +91,8 @@
             this.sellstock = new System.Windows.Forms.ToolStripMenuItem();
             this.buystock = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.Cashview = new System.Windows.Forms.DataGridView();
+            this.label29 = new System.Windows.Forms.Label();
             this.currentbondview = new System.Windows.Forms.DataGridView();
             this.labelBonds = new System.Windows.Forms.Label();
             this.currentcdview = new System.Windows.Forms.DataGridView();
@@ -100,42 +102,51 @@
             this.addcd = new System.Windows.Forms.ToolStripMenuItem();
             this.bondsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addbond = new System.Windows.Forms.ToolStripMenuItem();
+            this.cashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
             this.investhistory = new System.Windows.Forms.ToolStripMenuItem();
             this.stockhistory = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.historyinvestment = new System.Windows.Forms.Panel();
             this.historybondsview = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.historyCDview = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
+            this.searchpanel = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.historystock = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.stockhistoryview = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.fnametb = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.lnametb = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.edituserbutton = new System.Windows.Forms.Button();
+            this.emailtb = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.phonetb = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.passwordtb = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.usernametb = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.menuStrip4 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem22 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem23 = new System.Windows.Forms.ToolStripMenuItem();
-            this.editUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem24 = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.edituser = new System.Windows.Forms.ToolStripMenuItem();
+            this.adduser = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.HomeMenuStrip.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bondsview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cdview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stocksview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Stock_Performance)).BeginInit();
-            this.HomeMenuStrip.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TopPerformers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -145,6 +156,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lookupview)).BeginInit();
             this.menuStrip2.SuspendLayout();
             this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Cashview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.currentbondview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.currentcdview)).BeginInit();
             this.menuStrip5.SuspendLayout();
@@ -153,6 +165,8 @@
             this.historyinvestment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.historybondsview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.historyCDview)).BeginInit();
+            this.searchpanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.historystock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stockhistoryview)).BeginInit();
             this.tabPage4.SuspendLayout();
@@ -176,15 +190,53 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.LightGray;
-            this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Controls.Add(this.HomeMenuStrip);
             this.tabPage1.Controls.Add(this.panel2);
+            this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(773, 555);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Home";
+            // 
+            // HomeMenuStrip
+            // 
+            this.HomeMenuStrip.AllowMerge = false;
+            this.HomeMenuStrip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HomeMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.DashboardMitem,
+            this.StockMitem,
+            this.updateToolStripMenuItem});
+            this.HomeMenuStrip.Location = new System.Drawing.Point(3, 3);
+            this.HomeMenuStrip.Name = "HomeMenuStrip";
+            this.HomeMenuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.HomeMenuStrip.ShowItemToolTips = true;
+            this.HomeMenuStrip.Size = new System.Drawing.Size(767, 24);
+            this.HomeMenuStrip.TabIndex = 0;
+            this.HomeMenuStrip.Text = "menuStrip1";
+            // 
+            // DashboardMitem
+            // 
+            this.DashboardMitem.Name = "DashboardMitem";
+            this.DashboardMitem.Size = new System.Drawing.Size(76, 20);
+            this.DashboardMitem.Text = "Dashboard";
+            this.DashboardMitem.Click += new System.EventHandler(this.DashboardMitem_Click);
+            // 
+            // StockMitem
+            // 
+            this.StockMitem.Name = "StockMitem";
+            this.StockMitem.Size = new System.Drawing.Size(80, 20);
+            this.StockMitem.Text = "Stock Chart";
+            this.StockMitem.Click += new System.EventHandler(this.StockMitem_Click);
+            // 
+            // updateToolStripMenuItem
+            // 
+            this.updateToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.updateToolStripMenuItem.Text = "Update";
+            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // panel1
             // 
@@ -314,59 +366,21 @@
             // 
             // Stock_Performance
             // 
-            chartArea1.Name = "ChartArea1";
-            this.Stock_Performance.ChartAreas.Add(chartArea1);
-            legend1.Enabled = false;
-            legend1.Name = "Legend1";
-            this.Stock_Performance.Legends.Add(legend1);
+            chartArea5.Name = "ChartArea1";
+            this.Stock_Performance.ChartAreas.Add(chartArea5);
+            legend5.Enabled = false;
+            legend5.Name = "Legend1";
+            this.Stock_Performance.Legends.Add(legend5);
             this.Stock_Performance.Location = new System.Drawing.Point(0, 17);
             this.Stock_Performance.Name = "Stock_Performance";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.Stock_Performance.Series.Add(series1);
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.Stock_Performance.Series.Add(series5);
             this.Stock_Performance.Size = new System.Drawing.Size(353, 218);
             this.Stock_Performance.TabIndex = 0;
             this.Stock_Performance.Text = "chart1";
-            // 
-            // HomeMenuStrip
-            // 
-            this.HomeMenuStrip.AllowMerge = false;
-            this.HomeMenuStrip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HomeMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.DashboardMitem,
-            this.StockMitem,
-            this.updateToolStripMenuItem});
-            this.HomeMenuStrip.Location = new System.Drawing.Point(3, 3);
-            this.HomeMenuStrip.Name = "HomeMenuStrip";
-            this.HomeMenuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.HomeMenuStrip.ShowItemToolTips = true;
-            this.HomeMenuStrip.Size = new System.Drawing.Size(767, 24);
-            this.HomeMenuStrip.TabIndex = 0;
-            this.HomeMenuStrip.Text = "menuStrip1";
-            // 
-            // DashboardMitem
-            // 
-            this.DashboardMitem.Name = "DashboardMitem";
-            this.DashboardMitem.Size = new System.Drawing.Size(76, 20);
-            this.DashboardMitem.Text = "Dashboard";
-            this.DashboardMitem.Click += new System.EventHandler(this.DashboardMitem_Click);
-            // 
-            // StockMitem
-            // 
-            this.StockMitem.Name = "StockMitem";
-            this.StockMitem.Size = new System.Drawing.Size(80, 20);
-            this.StockMitem.Text = "Stock Chart";
-            this.StockMitem.Click += new System.EventHandler(this.StockMitem_Click);
-            // 
-            // updateToolStripMenuItem
-            // 
-            this.updateToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.updateToolStripMenuItem.Text = "Update";
-            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // panel2
             // 
@@ -411,18 +425,18 @@
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Enabled = false;
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea6.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea6);
+            legend6.Enabled = false;
+            legend6.Name = "Legend1";
+            this.chart1.Legends.Add(legend6);
             this.chart1.Location = new System.Drawing.Point(2, 255);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chart1.Series.Add(series6);
             this.chart1.Size = new System.Drawing.Size(762, 267);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -738,6 +752,8 @@
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.LightGray;
+            this.tabPage5.Controls.Add(this.Cashview);
+            this.tabPage5.Controls.Add(this.label29);
             this.tabPage5.Controls.Add(this.currentbondview);
             this.tabPage5.Controls.Add(this.labelBonds);
             this.tabPage5.Controls.Add(this.currentcdview);
@@ -750,10 +766,27 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Investment";
             // 
+            // Cashview
+            // 
+            this.Cashview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Cashview.Location = new System.Drawing.Point(6, 395);
+            this.Cashview.Name = "Cashview";
+            this.Cashview.Size = new System.Drawing.Size(763, 150);
+            this.Cashview.TabIndex = 8;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(7, 379);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(64, 13);
+            this.label29.TabIndex = 7;
+            this.label29.Text = "Cash history";
+            // 
             // currentbondview
             // 
             this.currentbondview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.currentbondview.Location = new System.Drawing.Point(7, 295);
+            this.currentbondview.Location = new System.Drawing.Point(7, 226);
             this.currentbondview.Name = "currentbondview";
             this.currentbondview.Size = new System.Drawing.Size(763, 150);
             this.currentbondview.TabIndex = 6;
@@ -761,7 +794,7 @@
             // labelBonds
             // 
             this.labelBonds.AutoSize = true;
-            this.labelBonds.Location = new System.Drawing.Point(7, 279);
+            this.labelBonds.Location = new System.Drawing.Point(7, 210);
             this.labelBonds.Name = "labelBonds";
             this.labelBonds.Size = new System.Drawing.Size(74, 13);
             this.labelBonds.TabIndex = 5;
@@ -788,7 +821,8 @@
             // 
             this.menuStrip5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
-            this.bondsToolStripMenuItem});
+            this.bondsToolStripMenuItem,
+            this.cashToolStripMenuItem});
             this.menuStrip5.Location = new System.Drawing.Point(3, 3);
             this.menuStrip5.Name = "menuStrip5";
             this.menuStrip5.Size = new System.Drawing.Size(767, 24);
@@ -806,7 +840,7 @@
             // addcd
             // 
             this.addcd.Name = "addcd";
-            this.addcd.Size = new System.Drawing.Size(96, 22);
+            this.addcd.Size = new System.Drawing.Size(152, 22);
             this.addcd.Text = "Add";
             this.addcd.Click += new System.EventHandler(this.addcd_Click);
             // 
@@ -821,16 +855,32 @@
             // addbond
             // 
             this.addbond.Name = "addbond";
-            this.addbond.Size = new System.Drawing.Size(96, 22);
+            this.addbond.Size = new System.Drawing.Size(152, 22);
             this.addbond.Text = "Add";
             this.addbond.Click += new System.EventHandler(this.addbond_Click);
+            // 
+            // cashToolStripMenuItem
+            // 
+            this.cashToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addToolStripMenuItem});
+            this.cashToolStripMenuItem.Name = "cashToolStripMenuItem";
+            this.cashToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.cashToolStripMenuItem.Text = "Cash";
+            // 
+            // addToolStripMenuItem
+            // 
+            this.addToolStripMenuItem.Name = "addToolStripMenuItem";
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.addToolStripMenuItem.Text = "Add";
+            this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.LightGray;
             this.tabPage3.Controls.Add(this.menuStrip3);
-            this.tabPage3.Controls.Add(this.historyinvestment);
+            this.tabPage3.Controls.Add(this.searchpanel);
             this.tabPage3.Controls.Add(this.historystock);
+            this.tabPage3.Controls.Add(this.historyinvestment);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -852,7 +902,8 @@
             // 
             this.toolStripMenuItem13.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.investhistory,
-            this.stockhistory});
+            this.stockhistory,
+            this.searchToolStripMenuItem});
             this.toolStripMenuItem13.Name = "toolStripMenuItem13";
             this.toolStripMenuItem13.Size = new System.Drawing.Size(57, 20);
             this.toolStripMenuItem13.Text = "History";
@@ -860,16 +911,23 @@
             // investhistory
             // 
             this.investhistory.Name = "investhistory";
-            this.investhistory.Size = new System.Drawing.Size(133, 22);
+            this.investhistory.Size = new System.Drawing.Size(152, 22);
             this.investhistory.Text = "Investment";
             this.investhistory.Click += new System.EventHandler(this.investhistory_Click);
             // 
             // stockhistory
             // 
             this.stockhistory.Name = "stockhistory";
-            this.stockhistory.Size = new System.Drawing.Size(133, 22);
+            this.stockhistory.Size = new System.Drawing.Size(152, 22);
             this.stockhistory.Text = "Stocks";
             this.stockhistory.Click += new System.EventHandler(this.stockhistory_Click);
+            // 
+            // searchToolStripMenuItem
+            // 
+            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.searchToolStripMenuItem.Text = "Search";
+            this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
             // 
             // historyinvestment
             // 
@@ -916,6 +974,41 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "History CD";
             // 
+            // searchpanel
+            // 
+            this.searchpanel.Controls.Add(this.dataGridView1);
+            this.searchpanel.Controls.Add(this.textBox1);
+            this.searchpanel.Controls.Add(this.label26);
+            this.searchpanel.Location = new System.Drawing.Point(3, 30);
+            this.searchpanel.Name = "searchpanel";
+            this.searchpanel.Size = new System.Drawing.Size(770, 525);
+            this.searchpanel.TabIndex = 2;
+            this.searchpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.searchpanel_Paint);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(7, 83);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(744, 184);
+            this.dataGridView1.TabIndex = 2;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(7, 27);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(4, 11);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(117, 13);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "search Company Name";
+            // 
             // historystock
             // 
             this.historystock.Controls.Add(this.label10);
@@ -945,13 +1038,18 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.LightGray;
-            this.tabPage4.Controls.Add(this.textBox8);
+            this.tabPage4.Controls.Add(this.fnametb);
+            this.tabPage4.Controls.Add(this.label27);
+            this.tabPage4.Controls.Add(this.lnametb);
+            this.tabPage4.Controls.Add(this.label28);
+            this.tabPage4.Controls.Add(this.edituserbutton);
+            this.tabPage4.Controls.Add(this.emailtb);
             this.tabPage4.Controls.Add(this.label24);
-            this.tabPage4.Controls.Add(this.textBox9);
+            this.tabPage4.Controls.Add(this.phonetb);
             this.tabPage4.Controls.Add(this.label25);
-            this.tabPage4.Controls.Add(this.textBox7);
+            this.tabPage4.Controls.Add(this.passwordtb);
             this.tabPage4.Controls.Add(this.label23);
-            this.tabPage4.Controls.Add(this.textBox6);
+            this.tabPage4.Controls.Add(this.usernametb);
             this.tabPage4.Controls.Add(this.label22);
             this.tabPage4.Controls.Add(this.menuStrip4);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
@@ -961,114 +1059,136 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Options";
             // 
-            // textBox8
+            // fnametb
             // 
-            this.textBox8.Location = new System.Drawing.Point(66, 153);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 9;
+            this.fnametb.Location = new System.Drawing.Point(66, 229);
+            this.fnametb.Name = "fnametb";
+            this.fnametb.Size = new System.Drawing.Size(100, 20);
+            this.fnametb.TabIndex = 14;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(3, 231);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(57, 13);
+            this.label27.TabIndex = 13;
+            this.label27.Text = "First Name";
+            // 
+            // lnametb
+            // 
+            this.lnametb.Location = new System.Drawing.Point(66, 188);
+            this.lnametb.Name = "lnametb";
+            this.lnametb.Size = new System.Drawing.Size(100, 20);
+            this.lnametb.TabIndex = 12;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(3, 195);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(58, 13);
+            this.label28.TabIndex = 11;
+            this.label28.Text = "Last Name";
+            // 
+            // edituserbutton
+            // 
+            this.edituserbutton.Location = new System.Drawing.Point(199, 265);
+            this.edituserbutton.Name = "edituserbutton";
+            this.edituserbutton.Size = new System.Drawing.Size(75, 23);
+            this.edituserbutton.TabIndex = 10;
+            this.edituserbutton.Text = "Edit";
+            this.edituserbutton.UseVisualStyleBackColor = true;
+            this.edituserbutton.Click += new System.EventHandler(this.edituserbutton_Click);
+            // 
+            // emailtb
+            // 
+            this.emailtb.Location = new System.Drawing.Point(66, 153);
+            this.emailtb.Name = "emailtb";
+            this.emailtb.Size = new System.Drawing.Size(100, 20);
+            this.emailtb.TabIndex = 9;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(3, 156);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(44, 13);
+            this.label24.Size = new System.Drawing.Size(31, 13);
             this.label24.TabIndex = 8;
-            this.label24.Text = " label23";
+            this.label24.Text = "email";
             // 
-            // textBox9
+            // phonetb
             // 
-            this.textBox9.Location = new System.Drawing.Point(66, 112);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 7;
+            this.phonetb.Location = new System.Drawing.Point(66, 112);
+            this.phonetb.Name = "phonetb";
+            this.phonetb.Size = new System.Drawing.Size(100, 20);
+            this.phonetb.TabIndex = 7;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(6, 119);
+            this.label25.Location = new System.Drawing.Point(3, 119);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(41, 13);
+            this.label25.Size = new System.Drawing.Size(37, 13);
             this.label25.TabIndex = 6;
-            this.label25.Text = "label25";
+            this.label25.Text = "phone";
             // 
-            // textBox7
+            // passwordtb
             // 
-            this.textBox7.Location = new System.Drawing.Point(66, 75);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 5;
+            this.passwordtb.Location = new System.Drawing.Point(66, 75);
+            this.passwordtb.Name = "passwordtb";
+            this.passwordtb.Size = new System.Drawing.Size(100, 20);
+            this.passwordtb.TabIndex = 5;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Location = new System.Drawing.Point(3, 78);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(44, 13);
+            this.label23.Size = new System.Drawing.Size(52, 13);
             this.label23.TabIndex = 4;
-            this.label23.Text = " label23";
+            this.label23.Text = "password";
             // 
-            // textBox6
+            // usernametb
             // 
-            this.textBox6.Location = new System.Drawing.Point(66, 34);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 3;
+            this.usernametb.Location = new System.Drawing.Point(66, 34);
+            this.usernametb.Name = "usernametb";
+            this.usernametb.Size = new System.Drawing.Size(100, 20);
+            this.usernametb.TabIndex = 3;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(6, 41);
+            this.label22.Location = new System.Drawing.Point(3, 41);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(41, 13);
+            this.label22.Size = new System.Drawing.Size(53, 13);
             this.label22.TabIndex = 2;
-            this.label22.Text = "label22";
+            this.label22.Text = "username";
             // 
             // menuStrip4
             // 
             this.menuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem22,
-            this.helpToolStripMenuItem});
+            this.edituser});
             this.menuStrip4.Location = new System.Drawing.Point(3, 3);
             this.menuStrip4.Name = "menuStrip4";
             this.menuStrip4.Size = new System.Drawing.Size(767, 24);
             this.menuStrip4.TabIndex = 1;
             this.menuStrip4.Text = "menuStrip4";
             // 
-            // toolStripMenuItem22
+            // edituser
             // 
-            this.toolStripMenuItem22.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem23,
-            this.editUserToolStripMenuItem,
-            this.toolStripMenuItem24});
-            this.toolStripMenuItem22.Name = "toolStripMenuItem22";
-            this.toolStripMenuItem22.Size = new System.Drawing.Size(47, 20);
-            this.toolStripMenuItem22.Text = "Users";
+            this.edituser.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.adduser});
+            this.edituser.Name = "edituser";
+            this.edituser.Size = new System.Drawing.Size(47, 20);
+            this.edituser.Text = "Users";
             // 
-            // toolStripMenuItem23
+            // adduser
             // 
-            this.toolStripMenuItem23.Name = "toolStripMenuItem23";
-            this.toolStripMenuItem23.Size = new System.Drawing.Size(133, 22);
-            this.toolStripMenuItem23.Text = "Add User";
-            // 
-            // editUserToolStripMenuItem
-            // 
-            this.editUserToolStripMenuItem.Name = "editUserToolStripMenuItem";
-            this.editUserToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
-            this.editUserToolStripMenuItem.Text = "Edit User";
-            // 
-            // toolStripMenuItem24
-            // 
-            this.toolStripMenuItem24.Name = "toolStripMenuItem24";
-            this.toolStripMenuItem24.Size = new System.Drawing.Size(133, 22);
-            this.toolStripMenuItem24.Text = "Delete User";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
+            this.adduser.Name = "adduser";
+            this.adduser.Size = new System.Drawing.Size(152, 22);
+            this.adduser.Text = "Add User";
+            this.adduser.Click += new System.EventHandler(this.adduser_Click);
             // 
             // Form1
             // 
@@ -1083,14 +1203,14 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.HomeMenuStrip.ResumeLayout(false);
+            this.HomeMenuStrip.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bondsview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cdview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stocksview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Stock_Performance)).EndInit();
-            this.HomeMenuStrip.ResumeLayout(false);
-            this.HomeMenuStrip.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TopPerformers)).EndInit();
@@ -1106,6 +1226,7 @@
             this.menuStrip2.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Cashview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.currentbondview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.currentcdview)).EndInit();
             this.menuStrip5.ResumeLayout(false);
@@ -1118,6 +1239,9 @@
             this.historyinvestment.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.historybondsview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.historyCDview)).EndInit();
+            this.searchpanel.ResumeLayout(false);
+            this.searchpanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.historystock.ResumeLayout(false);
             this.historystock.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stockhistoryview)).EndInit();
@@ -1147,13 +1271,9 @@
         private System.Windows.Forms.ToolStripMenuItem StockMitem;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.MenuStrip menuStrip4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem22;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem23;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem24;
         private System.Windows.Forms.MenuStrip menuStrip5;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem addcd;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataVisualization.Charting.Chart Stock_Performance;
         private System.Windows.Forms.Label label1;
@@ -1210,14 +1330,13 @@
         private System.Windows.Forms.Panel historystock;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView stockhistoryview;
-        private System.Windows.Forms.ToolStripMenuItem editUserToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox emailtb;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox phonetb;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox passwordtb;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox usernametb;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.DataGridView bondsview;
         private System.Windows.Forms.Label label6;
@@ -1225,6 +1344,22 @@
         private System.Windows.Forms.ToolStripMenuItem addbond;
         private System.Windows.Forms.DataGridView historybondsview;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
+        private System.Windows.Forms.Panel searchpanel;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox fnametb;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox lnametb;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Button edituserbutton;
+        private System.Windows.Forms.ToolStripMenuItem edituser;
+        private System.Windows.Forms.ToolStripMenuItem adduser;
+        private System.Windows.Forms.DataGridView Cashview;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.ToolStripMenuItem cashToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
